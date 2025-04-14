@@ -1,6 +1,6 @@
 pipeline {
     agent any
-
+    
     stages {
         stage('Terraform Init/Plan/Apply') {
             steps {
