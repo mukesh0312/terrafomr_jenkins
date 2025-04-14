@@ -9,8 +9,7 @@ pipeline {
                     string(credentialsId: 'aws-secret-access-key', variable: 'AWS_SECRET_ACCESS_KEY')
                 ]) {
                     sh '''
-                        terraform init
-                        
+                        terraform init                        
                         terraform destroy -auto-approve 
                     '''
                 }
